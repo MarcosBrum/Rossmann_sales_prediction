@@ -2,6 +2,8 @@
 
 Sales forecast for the stores of the european drugstore chain Rossmann.
 
+<img src="https://github.com/MarcosBrum/Rossmann_sales_prediction/blob/master/rossmann_drogeriemarkt.jpg" height="378" width="504">
+
 
 ## 1 Business problem
 
