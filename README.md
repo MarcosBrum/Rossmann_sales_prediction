@@ -47,6 +47,13 @@ __Step 09. Deploy Model to Production__: The model is deployed on a cloud enviro
 
 ## 5 Machine Learning Model Applied
 
+The following machine learning models were trained:
+* Linear Regression;
+* Regularized Linear Regression;
+* Random Forest Regressor;
+* XGBoost Regressor.
+
+All of them were cross-validated and their performance was compared against a random model.
 
 
 ## 6 Machine Learning Model Performance
