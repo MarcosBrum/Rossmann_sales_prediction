@@ -2,9 +2,11 @@
 
 Sales forecast for the stores of the european drugstore chain Rossmann.
 
+
 ## 1 Business problem
 
 The stores of the Rossmann drugstore chain need to be restored and the CEO needs to decide how much is going to be dedicated to the restoration of each one. To support this decision, the Analytics team is asked to present a sales forecast for each store during a period of six weeks, alongside with the total income expected in the chain. This forecast also informs the CEO which store is able to account for its own restoration with the income within this period.
+
 
 ## 2 Business Assumptions
 
@@ -12,12 +14,35 @@ The stores of the Rossmann drugstore chain need to be restored and the CEO needs
 * The store's opening on weekends and holidays vary from place to place.
 * The stores participate in seasonal promotions. In some of these cases, the promotion is continued for a longer time.
 
+
 ## 3 Solution Strategy
 
+The strategy adopted was the following:
+
+__Step 01. Data Description__: I searched for NAs, checked data types (and adapted some of them for analysis) and presented a statistical description.
+
+__Step 02. Feature Engineering__: New features were created to make possible a more thorough analysis.
+
+__Step 03. Data Filtering__: Entries containing no information or containing information which does not match the scope of the project were filtered out.
+
+__Step 04. Exploratory Data Analysis__: I performed univariate, bivariate and multivariate data analysis, obtaining statistical properties of each of them, correlations and testing hypothesis (the most important of them are detailed in the following section).
+
+__Step 05. Data Preparation__: Numerical data was rescaled, categorical data was transformed and cyclic data (such as months, weeks and days) was transformed using mathematical trigonometrical functions.
+
+__Step 06. Feature selection__: The statistically most relevant features were selected using the Boruta package.
+
+__Step 07. Machine learning modelling__: Some machine learning models were trained. The one that presented best results after cross-validation went through a further stage of hyperparameter fine tunning to optimize the model's generalizability.
+
+__Step 08. Model-to-business__: The models performance is converted into business values.
+
+__Step 09. Deploy Model to Production__: The model is deployed on a cloud environment to make possible that other stakeholders and services access its results.
 
 
 ## 4 Top 3 Data insights
 
+1. Stores with larger assortment do not sell more.
+2. Stores with closer competitors do sell more.
+3. Stores sell less at school holidays (except during summer).
 
 
 ## 5 Machine Learning Model Applied
